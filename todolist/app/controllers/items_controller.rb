@@ -50,7 +50,7 @@ class ItemsController < ApplicationController
 
     def destroy
         if @item.destroy
-            flash[:success] = 'Object was successfully deleted.'
+            flash[:success] = 'Task was successfully deleted.'
             redirect_to root_path
         else
             flash[:error] = 'Something went wrong'
